@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Booker Documentation</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+ 
+ <div class="wrapper">
+ 	<div class="wrapperInner clearfix">
+ <ol id="menu">
+ 	<li><a href="#logo">Changing Logo's</a></li>
+ 	<li><a href="#cta">Changing Call to Action Text</a></li>
+ 	<li><a href="#slides">Changing Book Covers</a></li>
+ 	<li><a href="#quotes">Changing Call Outs</a></li>
+ 	<li><a href="#pages">Updating Sample Thumbnails</a></li>
+ 	<li><a href="#reviews">Updating Reviews</a></li>
+ 	<li><a href="#menus">Changing Menu Links</a></li>
+ 	<li><a href="#email">Updating Email Sign Up</a></li>
+ 	<li><a href="#css">Changing CSS</a></li>
+ 	<li><a href="#analytics">Google Analytics</a></li>
+ 	<li><a href="#resource">More Resources</a></li>
+ </ol>	
+
+<div id="main"> 	   
+<h1>Thanks for buying Booker</h1>
+<p>The Booker template is a simple HTML5 theme specially designed for showcasing your eBook in quality and custom style. Booker is a single landing page dedicated to promoting and selling your ebook. Booker is not only a responsive theme meaning it is optimised for multiple device sizes, Booker is also retina ready, meaning no more blurry images on your HiDPI and retina displays. Remember Retina or HiDPI requires images twice the size of normal images.</p>
+
+
+
+<h1 id="how">How to use Booker?</h1>
+<p>Booker was built for non-web designer and developers, and in a few moments you can customise Booker to suite your own app and brand.</p>
+
+
+<p><h6>Important Note:</h6> Remember this theme is HiDPI, so all your images need to be delivered in Hi Res to avoid looking blurry on HiDPI and Retina displays. It is always best to work from the supplied template PSD which is Retina Sized.</p>
+
+
+<h3 id="logo">Changing Logo's</h3>
+<p>Booker pulls it's logo's and all other images from the img folder. Simply replace the logo files with your own, it's easiest to just overwrite the existing logo files with your own logo. Remember to include HiDPI versions.</p>
+
+ <p>Because Booker is Retina ready, and Retina Images are downscaled for non-HiDPI or Retina screens, you may have to update the size of the allocated area for your logo to avoid distortion or cropping. Open the main.css file and look for <pre>
+ /* ===================================================<br/>
+    LOGO<br/>
+    ================================================ */ </pre> 
+    
+    Here you can see the width properties. Match the width to suite the size of your logo when halved or divided by 2. So for example, you will see that the provided logo is actually 446px wide, however we half the size in our CSS to 223px wide to accomodate for Standard and Retina Screens simultaneously.</p>
+ 
+
+<h3 id="cta">Changing Call to Action text</h3>
+<p>Booker comes with a default area for Call to Action text or Headlines. A main heading, sub heading and feature button are provided. To update these look in the HTML for; </p>
+<pre> <- Start Call To Action -> </pre>
+<p>And replace the existing headline with your own compelling text. Remember to update the href="#Your Link Here" with your actual link to the downloadable eBook.</p>
+
+
+
+<h1 id="slides">Changing Book Covers</h1>
+
+
+<h3>Changing Book Cover Images</h3>
+<p>The book cover artwork can be simply updated in the supplied PSD file. Open it and go to the Head Section and then Books layer group. Here you will find 5 layers labeled 1 Book Cover, 1 Book Back, 2 Book Cover and so on. These layers are smart object layers and are turned off by default. Double click on the desired Book Cover layer, this activates the smart object in a new window. In the smart object window, paste your own cover image making sure to fill the complete area, save and close this window, and the Book cover will be updated. </p>
+
+<p><h6>Note:</h6> the Book Back layers are shape layers with no artwork included. They are only intended to be colored layers to match the Cover color. To update these, double click on the Book Back layer to open in the smart object window, then double click again to bring up the color changer, now change to match the color of the front cover, save and close.</p>
+
+
+<p><h6>Note:</h6> Being optimised for all devices, this theme uses 2 separate book images, one for wide displays and one for handheld displays. See the change when you resize your browser window. Be sure to update both versions of these images.</p>
+
+
+
+<h3 id="quotes">Changing Call Outs</h3>
+<p>In the HTML look for the comments labelled <pre><- Call Out  -></pre> and change the filler text to your own awesome quotes / testimonials. Call outs can have "highlights" or "quoted by" styles. Examples of both below:</p>
+<pre>&lt;span> Highlighted Text &lt;/span></pre>
+
+
+
+
+<h3 id="pages">Updating Sample Thumbnails</h3>
+<p>Booker come with a responsive lightbox to showcase pages from your eBook. There is a default list of 6 pages you can highlight.</p>
+<p>To change these images to your own, look in the HTML for</p>
+<pre>
+<- Start Page Thumb ->
+</pre> 
+<p>This whole block of code is required for the thumbnail, the hover effect and the lightbox popup. In the relative block, simply update the "img/image.jpg" path to the path/name of your own image and do the same for the thumbnail image also "img/thumb.jpg"  </p>
+
+<p>To add or delete additional thumbnials, simple add or delete the required "Start Page Thumb" code block.</p>
+
+
+
+<h3 id="reviews">Changing Reviews</h3> 
+<p>In the HTML look for the comments labelled <pre><- Quote  -></pre> and change the filler text to your own awesome reviews/ testimonials.</p>
+<p>Reviews also have an Author or by area, simply update the h6 tag for each review/Quote</p>
+
+
+
+<h3 id="menus">Changing Menu Links</h3>
+<p>Booker has three menu areas, in the header area this is duplicated on all 3 main sections.  In the Header area, to update the Download menu, look in the HTML file, the download menu item in the header and replace "#Your Link Here" with your own URL/link.</p>
+<p>As menu links are unique to each menu section you will have to update this across all 3 menu sections in your HTML.</p>
+
+
+
+<h3 id="email">Email Sign Up</h3>
+<p>In your HTML file look for:</p>
+<pre><- EMAIL NOTIFY SECTION -></pre>
+<p>Simply copy in your email sign code, this should be provided by your email marketing provided, (mailchimp, campaignmonitor or similar),
+And copy the class names from the existing form field and button, onto the newly pasted in field and button.
+</p>
+
+ 
+
+
+
+<h1 id="css">Changing CSS</h1>
+<p>Whilst Booker is pretty kick ass already you may want to get advanced and change the colours of backgrounds, links, text etc. You can do all of this by editing the main.css file. The main.css file is well commented to highlight to most common changeable aspects like link colours etc.</p>
+
+
+<h1 id="analytics">Google Analytics</h1>
+<p>At the very bottom of the HTML you will find a Google Analytics code snippet to use. Simply replace the UA ID number with your own to set up Google Analytics and start receiving stats and figures about your webpage, or delete this whole section and copy and paste in the code snippet Google provides.</p>
+<p>Also DO NOT FORGET to update the title and description of your web page. You can find these at the very top of the HTML file, just look for</p>
+<pre>&lt;title>Booker&lt;/title><br/> &lt;meta name="description" content=""></pre> and update them to you own apps name and a description between the content="" for search engines.
+
+
+<h4 id="resource">Digital Download Services</h4>
+<p>Whilst there are many services/providers out there that handle digital download services, here is a list of recommended providers.</p>
+<ul>
+	<li><a href="http://www.fetchapp.com" target="_blank">FetchApp</a></li>
+	<li><a href="http://getdpd.com" target="_blank">DPD: Digital Product Delivery</a></li>
+	<li><a href="http://dev7studios.com/sellwire/" target="_blank">Sellwire</a></li>
+</ul>	
+
+<h4>Retina Resource</h4>
+<p>For detailed information about designing for HiDPI or Retina websites, I suggest taking a look at: <a href="http://retinafy.me" target="_blank"> retinafy.me</a></p>
+
+<h4>Image Optimization Resource</h4>
+<p>For optimizing image even further from Photoshop, I suggest taking a look at the Mac resource: <a href="http://imageoptim.com" target="_blank"> Image Optim</a></p>
+
+<h4>Icon Resource</h4>
+<p>The icons used in the theme are from the Liney Icon set and can be purchased here: <a href="http://graphicriver.net/item/lineyicon/3098694?WT.ac=portfolio&WT.seg_1=portfolio&WT.z_author=KennyWilliams&ref=KennyWilliams" target="_blank"> Liney Icons Here</a></p>
+
+</div>
+</div>
+</div>
+    </body>
+</html>
